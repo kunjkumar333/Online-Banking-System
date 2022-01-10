@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;500&display=swap");
+
+.front {
+  background-color: rgb(242, 239, 250);
+  margin: 2px;
+}
+.max {
+  font-size: 60px;
+}
+
+.maxp {
+  font-size: 23px;
+}
+
+.top-text {
+  padding-top: 180px;
+  padding-left: 80px;
+}
+.bottom-text {
+  padding-left: 80px;
+}
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Lato";
+  font-weight: 300;
+}
+.btn1 {
+  background-color: rgb(118, 69, 253);
+  color: white;
+  margin-bottom: 200px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.man_image {
+  margin-top: 25%;
+  height: 65%;
+  width: 75%;
+  
+  display: block;
+}
+
+.third-party {
+  margin-top: 190px;
+  margin-bottom: 170px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 25%;
+}
+
+.second1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1 {
+  border-radius: 20px;
+  margin-bottom: 400px;
+}
+
+.second2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card2 {
+  border-radius: 20px;
+  margin-bottom: 400px;
+}
+
+ul {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.third {
+  width: 60%;
+  margin: auto;
+}
+.gap {
+  margin-left: 40px;
+}
+
+.cards {
+  margin-left: 130px;
+  width: 80%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.maxf {
+  font-weight: 500;
+  padding: 2px 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h6 {
+  padding-top: 52px;
+}
+
+.socialmedia {
+  margin-right: 102px;
+}

@@ -1,0 +1,160 @@
+main{
+
+    min-height: 100vh;
+    background: linear-gradient(to right top,#2a7de9, #4cb6f3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 60vh;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+   backdrop-filter: blur(2rem);
+   display: flex;
+}
+
+.circle1,.circle2{
+    
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 1),rgba(255,255,255,0.5));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+
+
+   
+}
+
+.circle1{
+
+    top:23%;
+    right:20%;
+
+
+}
+.circle2{
+    bottom:-5%;
+    left:17%;
+
+
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.dashboard{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.2),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+
+.games{
+    flex: 3;
+}
+
+.activegames{
+    color: rgb(0, 122, 204);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+
+}
+.link{
+    display: flex;
+    margin:1rem 0rem;
+    padding:1rem 5rem;
+    align-items: center;
+
+}
+
+.link h2{
+
+    padding:0rem 1rem;
+}
+
+.pro{
+    background: linear-gradient(to right top,#d8fff8, #bff8ff);
+    border-radius: 2rem;
+    color:rgb(0, 236, 253);
+     padding:1rem;
+}
+.gap{
+    margin-left:7px;
+}
+
+.gap{
+    cursor: pointer;
+}
+
+.gap1{
+    margin-left:15px;
+}
+.gap1:hover{
+    cursor: pointer;
+}
+
+
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.2),rgba(255,255,255,0.3));
+    border: none;
+    width: 50%;
+    padding:0.5;
+    border-radius: 2rem;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:5rem;
+}
+
+.rod{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+    border-radius: 1rem;
+    margin:1rem 0rem;
+    padding:1.5rem 0rem;
+    width: 40vw;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
+    justify-content: space-between;
+
+ 
+}
+
+.rod:hover{
+    background-color: rgb(52, 255, 255);
+    cursor: pointer;
+}
+
+.prgs{
+    background: linear-gradient(to right top,#3ef2ff, #7decff);
+    width: 20vw;
+    height: 25%;
+    border-radius: 2rem;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage{
+    font-weight: bold;
+}

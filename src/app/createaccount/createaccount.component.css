@@ -1,0 +1,47 @@
+/* body{
+    background: url("..");
+} */
+@media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 90%;
+    }
+    .modal-dialog .modal-content {
+      padding: 1rem;
+    }
+  }
+.form-group{
+    margin-top: 1.8%;
+    padding-top: 1%;
+}
+.container{
+    margin-top: -3%;
+}
+.modal{
+  width: 100%;
+}
+.nav {
+  display: flex
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  padding-inline-start: unset;
+  margin-bottom: 6vh
+}
+
+.nav li {
+  padding: 1rem
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none
+}
+
+.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 130%;
+
+}

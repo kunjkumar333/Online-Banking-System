@@ -1,0 +1,67 @@
+.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+.card {
+  margin: auto;
+  width: 400px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.nav {
+  display: flex
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  padding-inline-start: unset;
+  margin-bottom: 6vh
+}
+
+.nav li {
+  padding: 1rem
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none
+}
+
+.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 130%;
+
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+#log{
+    margin-left: 37%;
+    margin-top: -20%;
+    height: 100px;
+    width: 100px;
+}

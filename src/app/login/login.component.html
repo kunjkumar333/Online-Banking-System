@@ -1,0 +1,77 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-6  my-auto">
+      <div>
+        <h1 class="text-primary"><b>Account Access<br> Just one Click Away</b></h1>
+
+      </div>
+      <div class="container">
+        <button type="button" class="btn btn-primary btn-lg text-white fw-bold w-50 " (click)="loginForm()" id="show"
+          data-toggle="modal" data-target="#loginModal">
+          Login
+        </button>
+      </div>
+      <div class="mt-5">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class=" modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="log" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                  data-placement="top" title="Account">
+                  <i class="far fa-user-circle"></i>
+                </button>
+                <div class="nav">
+                  <ul class="mx-auto">
+                    <li class="active">Login</li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                  <form (ngSubmit)="checkLogin()" ngNativeValidate>
+
+                    <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+                    <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+                    
+                    <div class="form-group my-2">
+
+                      <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email"
+                        placeholder="Your email address...">
+                    </div>
+                    <div class="form-group my-2">
+
+                      <input type="password" class="form-control" [(ngModel)]="password" id="password" name="password"
+                        placeholder="Your password...">
+                    </div>
+                    <button type="submit" id="hide" class="btn w-50 p-2 text-white btn-info fw-bold btn-block btn-round">Login</button>
+                    
+                  </form>
+
+                  <div class="text-center text-muted delimiter">or use a social network</div>
+                  <div class="d-flex justify-content-center social-buttons">
+                    <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                      title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                      title="Facebook">
+                      <i class="fab fa-facebook"></i>
+                    </button> 
+                    <button type="button"  class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                      title="Linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <img class="image-fluid w-100" src="assets\images\login-img.png">
+    </div>
+  </div>
+ 
+</div>

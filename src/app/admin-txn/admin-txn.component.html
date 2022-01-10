@@ -1,0 +1,62 @@
+<!-- <<h3>Create Product</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()" ngNativeValidate>
+    
+    <div class="form-group">
+      <label for="name">Uid</label>
+      <input type="text" class="form-control" id="uid" required [(ngModel)]="transaction.uid" name="uid">
+    </div>
+
+    <!-- <div class="form-group">
+        <label for="name">Sent</label>
+        <input type="text" class="form-control" id="sent" required [(ngModel)]="transaction.sent" name="sent">
+      </div> 
+    <div class="form-group">
+      <label for="name">Balance</label>
+      <input type="text" class="form-control" id="balance" required [(ngModel)]="transaction.balance" name="balance">
+    </div>
+    <!-- <div class="form-group">
+        <label for="name">Date</label>
+        <input type="date" class="form-control" id="date" required [(ngModel)]="transaction.date" name="balance">
+      </div>    
+      <div class="form-group">
+        <label for="name">Recieved</label>
+        <input type="text" class="form-control" id="recieved" required [(ngModel)]="transaction.recieved" name="balance">
+      </div>
+      <div class="form-group">
+        <label for="name">RecieverId</label>
+        <input type="text" class="form-control" id="RecieverId" required [(ngModel)]="transaction.recieverid" name="balance">
+      </div> 
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> 
+</div>
+
+<hr>
+
+<hr>> -->
+<div class="card mt-50 mb-50">
+  <div class="nav">
+    <ul class="mx-auto">
+      <li class="active">Administrator</li>
+    </ul>
+  </div>
+  <form class="form-group" (ngSubmit)="onSubmit()" ngNativeValidate> 
+  
+    <div class="row-1 form-group">
+      <div class="row row-2"> <span id="card-inner">Enter Receiver Id:</span> </div>
+      <div class="row row-2"> <input type="text" class="form-control" id="userid" [(ngModel)]="transaction.uid" placeholder="xxxxx22@xxxx" name="uid" required> </div>
+    </div>
+    <div class="row-1 form-group">
+      <div class="row row-2"> <span id="card-inner">Enter Amount:</span> </div>
+      <div class="row row-2"> <input type="number" class="form-control" [(ngModel)]="transaction.balance" id="amount" placeholder="xxxxx22@xxxx" name="balanace" required> </div>
+    </div>
+    <button class="btn d-flex mx-auto form-group"><b>Send Money</b></button>
+  </form>
+</div>
+

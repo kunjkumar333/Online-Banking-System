@@ -1,0 +1,165 @@
+<!-- <div class="dash-board">
+  <div class="row">
+    <div class="col-6">
+      <div class="side-bar">
+        <div class="row">
+          <div class="col-2">
+            <img src="#" alt="#" class="mx-5">
+          </div>
+          <div class="col-2">
+            <h3>{{uniqueID}}</h3>
+            <p>"Profile"</p>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-6 pt-5">
+          <div class="nav flex-column nav-pills px-4 mx-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" routerLink="/home" role="tab" aria-controls="v-pills-home" >Home</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" routerLink="/passbook" role="tab" aria-controls="v-pills-profile" >Passbook</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" routerLink="/sendmoney" role="tab" aria-controls="v-pills-messages" >Send Money</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      <div class="aside">
+
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- <div class="row">
+  <div class="col-6">
+    <div class="side-nav">
+
+      <app-side-nav></app-side-nav>
+
+    </div>
+
+    <div class="col-6">
+      
+        <router-outlet>
+          <app-passbook></app-passbook>
+          <app-sendmoney></app-sendmoney>
+        </router-outlet>
+      
+    </div>
+  </div>
+</div>  -->
+
+<main>
+  <section class="glass mt-2 pt-3">
+
+      <div class="dashboard">
+          <div class="user">
+              <img src="assets/images/user.png" height="50px" alt="">
+              <h4>{{name}} </h4>
+              <h6>{{uniqueID}} </h6>
+              <p>{{user}}</p>
+          </div>
+          <div class="links">
+              <div class="link">
+                  <img src="assets/images/home.png" height="30px" alt="" >
+                  <h6  (click)= "passbook()" class="gap1" >Passbook</h6>
+              </div>
+
+              <div class="link">
+                  <img src="assets/images/rising.png"  height="30px"alt="" >
+                  <h6 class="gap" (click)= "sendmoney()" >Send Money</h6>
+              </div>
+              <div class="link">
+                  <img src="assets/images/rising.png" height="30px"alt=""  class = "rotate">
+                  <h6 class="gap" (click)= "receivemoney()"  >Receive Money</h6>
+              </div>
+
+              <div class="link">
+                  <img src="assets/images/contact.png" height="30px" alt="" >
+                  <h6 class="gap" routerLink="/contactus"  >Contact Us</h6>
+              </div>
+
+              <div class="link">
+                  <img src="assets/images/information.png" height="30px" alt="" >
+                  <h6 class="gap" routerLink="/aboutus"  >About Us</h6>
+              </div>
+          </div>
+          
+          <div class="pro">
+              <h5 (click)= "createaccount()" class="gap" >Join Us for free Basic Account</h5>
+              <img src="assets/images/add-user.png" height="30px" alt="">
+          </div>
+
+      </div>
+
+      <div class="games">
+          <div class="status">
+              <h3 class="activegames">Active Games</h3>
+              <input type="text"/>
+          </div>
+          <div class="rods">
+              <div class="rod">
+                  <img src="assets/images/information.png" height="30px" width="30px" alt="">
+                  <div class="card-info">
+                      <h4> Assassins Creed</h4>
+                      <p>PS5 Version</p>
+                      <div class="prgs"></div>
+                </div>
+                  <h3 class="percentage">60%</h3>
+             
+              </div>
+
+              <div class="rod">
+                  <img src="assets/images/information.png" height="30px" width="30px" alt="">
+                  <div class="card-info">
+                      <h4> Assassins Creed</h4>
+                      <p>PS5 Version</p>
+                      <div class="prgs"></div>
+                  </div>
+                  <h3 class="percentage">60%</h3>
+              </div>
+
+
+              <div class="rod">
+                  <img src="assets/images/information.png" height="30px" width="30px" alt="">
+                  <div class="card-info">
+                      <h4> Assassins Creed</h4>
+                      <p>PS5 Version</p>
+                      <div class="prgs"></div>
+                  </div>
+                  <h3 class="percentage">60%</h3>
+              </div>
+
+
+          </div>
+      </div>
+  </section>
+</main>
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button type="button" class="btn btn-primary" (click)="passbook()">Passbook</button>
+<button type="button" class="btn btn-primary" (click)="sendmoney()">Sendmoney</button>
+<button type="button" class="btn btn-primary" (click)="receivemoney()">Receivemoney</button>
+
+<h2>{{user}}</h2>
+
+<button (click)="getUserId()">Get Id</button>
+<h2>{{uniqueID}}</h2> -->
+
