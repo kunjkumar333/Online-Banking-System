@@ -34,7 +34,7 @@
     <div class="container">
       <a class="navbar-brand" routerLink="/home">
         <img src="assets/images/logo.PNG">
-        <b class="bank-name">U&We</b>
+        <b class="bank-name">U&WeBank</b>
       </a>
       <div>
         <a routerLink="/login">
@@ -42,21 +42,31 @@
               class="m-4">Log In <i class="fas fa-chevron-right"></i></span></button>
         </a>
 
+        
+        <a routerLink="/aboutus">
+
+          <button type="button" class="btn  btn-outline-primary mx-1 p-2 my-3"><span class="m-4">About Us  <i
+            class="fas fa-info"></i></span></button>
+          </a>
+          <a routerLink="/contactus">
+            
+            <button type="button" class="btn btn-outline-primary mx-1 p-2 my-3"><span class="m-4">Contact Us  <i
+              class="fas fa-phone"></i></span></button>
+            </a>
+            <a routerLink="/dashboard">
+    
+              <button type="button" *ngIf="lService.isUserLoggedIn()" class="btn  btn-primary mx-1 p-2  my-3"><span
+                  class="m-4">Dashboard <i class="fas fa-chevron-right"></i></span></button>
+            </a>
         <a routerLink="/createaccount">
-
+          
           <button type="button" *ngIf="!lService.isUserLoggedIn()" class="btn  btn-primary mx-1 p-2 my-3"><span
-              class="m-4">Create Account <i class="fas fa-chevron-right"></i></span></button>
-        </a>
-        <a routerLink="/dashboard">
-
-          <button type="button" *ngIf="lService.isUserLoggedIn()" class="btn  btn-primary mx-1 p-2 my-3"><span
-              class="m-4">Dashboard <i class="fas fa-chevron-right"></i></span></button>
-        </a>
-
+            class="m-4">Create Account  <i class="fas fa-user-plus"></i></span></button>
+          </a>
         <a routerLink="/logout">
 
           <button type="button" *ngIf="lService.isUserLoggedIn()" id="show" data-bs-toggle="modal"
-            data-bs-target="#exampleModal" class="btn  btn-primary p-2 my-3 "><span class="m-4">Logout <i
+            data-bs-target="#exampleModal" class="btn btn-primary p-2 my-3 "><span class="m-4">Logout <i
                 class="fas fa-chevron-right"></i></span></button>
         </a>
 

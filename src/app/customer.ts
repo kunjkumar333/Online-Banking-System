@@ -15,5 +15,6 @@ export class Customer {
     city:string='';
     street:string='';
     pincode:number=0;
+    uid:any;
    
 }

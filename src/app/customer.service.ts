@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CustomerService {
-  baseUrl = "http://localhost:9999/obs/data/users";
-  baseUrl1 = "http://localhost:9999/obs/data/userlogin";
-  baseUrl2='http://localhost:9999/obs/data/getId';
-  baseUrl3='http://localhost:9999/obs/data/getName';
+  baseUrl = "http://localhost:9876/obs/data/users";
+  baseUrl1 = "http://localhost:9876/obs/data/userlogin";
+  baseUrl2='http://localhost:9876/obs/data/getId';
+  baseUrl3='http://localhost:9876/obs/data/getName';
   route: any;
 
   constructor(private http: HttpClient) { }

@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-center">
+  <div class="text-center py-5 fw-bold fst-italic">
+    <h3>Your Account Balance Is: </h3>
+  </div>
+  <div class="balance mx-3">
+    <h3 class="py-5"><u> {{ txns.balance | currency:"INR"}} </u></h3>
+  </div>
+</div>
+<button class="btn btn-outline-secondary" routerLink="/dashboard"> Back to dashboard </button>

@@ -18,31 +18,23 @@ main{
    display: flex;
 }
 
-.circle1,.circle2{
-    
+.circle1,.circle2{    
     background: white;
     background: linear-gradient(to right bottom, rgba(255,255,255, 1),rgba(255,255,255,0.5));
     height: 10rem;
     width: 10rem;
     position: absolute;
-    border-radius: 50%;
-
-
-   
+    border-radius: 50%;   
 }
 
 .circle1{
 
-    top:23%;
+    top:20%;
     right:20%;
-
-
 }
 .circle2{
     bottom:-5%;
     left:17%;
-
-
 }
 
 .rotate{
@@ -75,8 +67,11 @@ main{
     margin:1rem 0rem;
     padding:1rem 5rem;
     align-items: center;
+    
+    
 
 }
+
 
 .link h2{
 
@@ -84,17 +79,18 @@ main{
 }
 
 .pro{
-    background: linear-gradient(to right top,#d8fff8, #bff8ff);
+    background: linear-gradient(to right top,#7180d4, #a1ffff);
     border-radius: 2rem;
-    color:rgb(0, 236, 253);
-     padding:1rem;
-}
-.gap{
-    margin-left:7px;
+    color:rgba(0, 236, 253, 0.705);
+    padding:1rem;
+    margin-top: 28%;
 }
 
+
 .gap{
+    color: black;
     cursor: pointer;
+    margin-left: 10%;
 }
 
 .gap1{
@@ -133,8 +129,6 @@ main{
     width: 40vw;
     box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
     justify-content: space-between;
-
- 
 }
 
 .rod:hover{

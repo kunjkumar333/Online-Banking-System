@@ -10,9 +10,10 @@ export class AfterloginService {
 
 
   
-  baseUrl='http://localhost:9999/obs/txn/get';
-  baseUrl1='http://localhost:9999/obs/txn/all';
-  baseUrl2='http://localhost:9999/obs/txn/add';
+  baseUrl='http://localhost:9876/obs/txn/get';
+  baseUrl1='http://localhost:9876/obs/txn/all';
+  baseUrl2='http://localhost:9876/obs/txn/add';
+  baseUrl3='http://localhost:9876/obs/data/checkAccount';
   constructor(private http:HttpClient) { }
 
   getPassbook(uid:any):Observable<any>{
@@ -28,5 +29,8 @@ export class AfterloginService {
     return this.http.post(`${this.baseUrl2}`,transact);
   }
 
+  checkuser(userid: String): Observable<any> {
+    return this.http.get(`${this.baseUrl3}/${userid}`);
+  }
   
 }

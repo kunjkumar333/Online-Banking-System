@@ -1,0 +1,39 @@
+<!-- <h3>Deposit Money</h3>
+
+<div class="card">
+  <div class="card-body">
+<form class="form-group" (ngSubmit)="deposit()" ngNativeValidate>
+    <div class="form-group">
+      <label for="name">Uid</label>
+      <input type="text" class="form-control" id="uid" required [(ngModel)]="uid" name="uid">
+    </div>
+    <div class="form-group">
+        <label for="name">Balance</label>
+        <input type="text" class="form-control" id="amount" required [(ngModel)]="amount" name="amount">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+</div>  -->
+
+<div class="card mt-50 mb-50">
+  <div class="nav">
+    <ul class="mx-auto">
+      <li class="active">Admin Deposit</li>
+    </ul>
+  </div>
+  <form class="form-group" (ngSubmit)="deposit()" ngNativeValidate> 
+  
+    <div class="row-1 form-group">
+      <div class="row row-2"> <span id="card-inner">UID:</span> </div>
+      <div class="row row-2"> <input type="text" class="form-control" id="userid" [(ngModel)]="uid" placeholder="xxxxx22@xxxx" name="uid" required> </div>
+    </div>
+    <div class="row-1 form-group">
+      <div class="row row-2"> <span id="card-inner">Enter Amount:</span> </div>
+      <div class="row row-2"> <input type="number" class="form-control" [(ngModel)]="amount" id="amount" name="amount" required> </div>
+    </div>
+    <button class="btn d-flex mx-auto form-group"><b>Send Money</b></button>
+  </form>
+</div>
+
+

@@ -10,6 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   selector: 'app-createaccount',
   templateUrl: './createaccount.component.html',
   styleUrls: ['./createaccount.component.css']
+  
 })
 export class CreateaccountComponent implements OnInit {
 
@@ -66,6 +67,6 @@ export class CreateaccountComponent implements OnInit {
  onSubmit(){
    this.submitted = true;
    this.save();
-   this.route.navigate(['/login']);
+  //  this.route.navigate(['/login']);
  } 
 }

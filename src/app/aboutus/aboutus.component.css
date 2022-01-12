@@ -1,31 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+
+html,
 body {
+    height: 100%
+}
+
+body {
+
+    place-items: center;
     background: #eee
 }
 
-.name {
-    color: blue
+.card {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+    border: none
 }
 
-.work {
-    font-weight: bold;
-    font-size: 15px
+.card img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
 }
 
-.about span {
-    font-size: 13px
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
 }
 
-.v-profile {
-    color: blue;
-    cursor: pointer
+.neo-button:active {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
 }
 
-.box {
-    -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
-    -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
-    box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72)
+.fa-facebook {
+    color: #3b5998
 }
 
-.col-md-3 {
-    margin-top: 10px
+.fa-linkedin {
+    color: #0077b5
+}
+
+.fa-google {
+    color: #dc4e41
+}
+
+.fa-youtube {
+    color: #cd201f
+}
+
+.fa-twitter {
+    color: #55acee
+}
+.container{
+    margin-left: 10%;
 }

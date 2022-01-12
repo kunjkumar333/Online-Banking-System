@@ -10,7 +10,11 @@ import { SendmoneyComponent } from './sendmoney/sendmoney.component';
 import { AdminTxnComponent } from './admin-txn/admin-txn.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { AuthGuard } from './createaccount/auth.guard';
+import { AuthGuard } from './contactus/auth.guard';
+import { AdminDahboardComponent } from './admin-dahboard/admin-dahboard.component';
+import { AdminSendComponent } from './admin-send/admin-send.component';
+import { AdminWithdrawComponent } from './admin-withdraw/admin-withdraw.component';
+import { CheckBalanceComponent } from './check-balance/check-balance.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -22,9 +26,13 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'createaccount', component:CreateaccountComponent},
   {path:'logout', component: LogoutComponent},
-  {path:'admintxn', canActivate:[AuthGuard], component:AdminTxnComponent},
+  {path:'admintxn', component:AdminTxnComponent},
   {path:'aboutus', component:AboutusComponent},
-  {path:'contactus', component:ContactusComponent}
+  {path:'contactus', component:ContactusComponent},
+  {path:'admin-send', component:AdminSendComponent},
+  {path:'admin-withdraw', component:AdminWithdrawComponent},
+  {path:'admin-dashboard', component:AdminDahboardComponent},
+  {path:'checkbalance',canActivate:[AuthGuard], component:CheckBalanceComponent}
 ];
 
 @NgModule({

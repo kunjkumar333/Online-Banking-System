@@ -72,7 +72,7 @@ export class AdminTxnComponent implements OnInit {
   }
 
 gotoList() {
-    this.router.navigate(['/home']).then(() => {
+    this.router.navigate(['/admin-dashboard']).then(() => {
       window.location.reload();
     });
   }

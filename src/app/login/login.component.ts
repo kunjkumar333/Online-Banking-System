@@ -39,8 +39,10 @@ export class LoginComponent implements OnInit {
   checkLogin() {
     
     if(this.email==="admin@falcon" && this.password==="admin@falcon"){
-      this.route.navigate(['/admintxn']);
+      this.loginSuccess=true;
+      this.route.navigate(['/admin-dashboard']);
     }
+    else{
 
 
     let customer = { "email": this.email, "password": this.password};
@@ -66,4 +68,5 @@ export class LoginComponent implements OnInit {
     this.loginSuccess = false;
 
   }
+}
 }
